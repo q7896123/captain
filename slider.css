@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* 모든 요소 안쪽, 바깥쪽 여백을 제거 */
+*{margin: 0;padding: 0;}
+
+/* 보여져야 하는 영역 css */
+.view{position: relative;width: 600px; overflow: hidden; }
+
+/* 이미지를 감싸는 영역과 img 요소 css */
+.img_wrap{position: relative;width: 3000px;}
+.img_wrap img{float: left;width: 600px;height: 400px;}
+
+/* 내용을 담고있는 영역과, 내용이 서로 겹쳐 보여야 하는 css */
+.text_wrap{position:absolute; top:200px; left:50px;}
+.slider_text{position:absolute; width:250px; height:150px;color:#fff;}
+
+/* 컨트롤 버튼을 담고있는 영역 css */
+.control_wrap{
+	position:absolute;
+	top:380px;
+	left:270px;
+	height: 13px;
+	overflow: hidden;
+}
+
+/* 컨트롤 버튼 css */
+.control_btn{
+	position:relative;
+	width:13px;
+	height:46px;
+	float:left;
+	cursor: pointer;
+	background-image: url('./img/point_button.png');
+}
+
+/*
+	컨트롤 버튼 에 마우스를 올렸을 경우와,
+	예를들어 지금 보고있는 이미지가 1번 이미지일 경우!
+	첫번째 버튼에 불이 들어와 있다는걸 표시하기 위한 클래스
+*/
+.control_btn:hover{top:-16px;}
+.control_btn.active{top:-31px;}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>같은하늘아래우리 펜션</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimun-scale=1.0, user-scalable=no" />
+        <link href="./1.css" rel="stylesheet" type="text/css"> 
+        
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
+        
+        <script language=javascript>
+            function showPopup(x) { window.open(x, "a", "width=600, height=500, left=100, top=50"); }
+    
+            function check_search()
+            {
+               var input_value=document.Chk.keyword.value
+               if (input_value=="이벤트")
+                   document.location.href="./이벤트.html";                                                                                                                                                                                                                                                 
+               else
+                  alert("이벤트 이외의 키워드는 검색되지 않습니다..!")
+            }
+            
+        </script>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#toggle").click(function(){
+                    $("#one").toggle(1000);
+                    $("#two").toggle(1000);
+                    $("#three").toggle(1000);
+                    $("#four").toggle(1000);
+                });
+            });
+            
+            $(document).ready(function(){
+                    $("#slide").click(function(){
+                        $("#one").slideToggle('slow');
+                        $("#two").slideToggle('slow');
+                        $("#three").slideToggle('slow');
+                        $("#four").slideToggle('slow');
+                    });
+                });
+                $(document).ready(function(){
+                    $("#ani_1").click(function(){
+                        var div = $("#one");  
+                        div.animate({left: '100px'}, "slow");
+                        div.animate({fontSize: '3em'}, "slow");
+                 });   
+                });
+                $(document).ready(function(){
+                    $("#ani_2").click(function(){
+                        var div = $("#two");  
+                        div.animate({left: '100px'}, "slow");
+                        div.animate({fontSize: '3em'}, "slow");
+                 });   
+                });
+                $(document).ready(function(){
+                    $("#ani_3").click(function(){
+                        var div = $("#three");  
+                        div.animate({left: '100px'}, "slow");
+                        div.animate({fontSize: '3em'}, "slow");
+                 });   
+                });
+                $(document).ready(function(){
+                    $("#ani_4").click(function(){
+                        var div = $("#four");  
+                        div.animate({left: '100px'}, "slow");
+                        div.animate({fontSize: '3em'}, "slow");
+                 });   
+                });
+        </script>
+
+        <script>
+            expireDate = new Date 
+            expireDate.setMonth(expireDate.getMonth()+6) 
+            hitCt = eval(cookieVal("pageHit")) 
+            hitCt++ 
+            document.cookie = "pageHit="+hitCt+";expires=" + expireDate.toGMTString() 
+
+            function cookieVal(cookieName) { 
+                thisCookie = document.cookie.split("; ") 
+                for (i=0; i<thisCookie.length; i++) { 
+                    if (cookieName == thisCookie[i].split("=")[0]) { 
+                        return thisCookie[i].split("=")[1] 
+                    } 
+                } 
+            return 0 
+            } 
+        </script>
+
+
+    <meta charset="UTF-8">
+    <body id="page-top">
+        <div class="first-group">
+            <nav >
+                <div class="menu">
+                    <a class="main menu-bar" href="#page-top"><b>강화도 펜션</b></a>
+                    <div class="menu-bar">
+                        <ul>
+                            <li>
+                                <a href="./펜션소개.html">펜션소개</a> 
+                            </li>
+                            <li>
+                                <a href="./객실소개.html">객실소개</a>
+                            </li>    
+                            <li>
+                                <a href="./예약안내.html">예약안내</a>
+                            </li>
+                            <li>
+                                <a href="index.html">처음으로</a>
+                            </li>
+                            <li>
+                                <a href="./more.html">추가 정보</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        
+            <header>
+                <div>
+                    <h1 class="text-uppercase" id="title">
+                        <strong>WE are<br>같은하늘아래 우리 펜션</strong>
+                    </h1>
+
+                <div class="text-part">
+                    <p>반갑습니다~ 같은하늘아래 우리 펜션입니다.</p>
+                </div>
+            </header>
+            
+            <a class="button1" href="#contents">소개글</a>
+            </nav> 
+        </div>
+        <div class="second-group" id="contents">
+            <div>
+                <h1 class="text-design">여러분들 찾아주셔서 환영합니다~</h1>
+            </div>
+            <hr>
+            <div class="set" id="set">
+                <div id="one">
+                    <h2 class="text-design">ONE!! 하나</h3>
+                    <p><span span style="color:white">저희 펜션은 <b>강화도</b>에 위치한 작지만 아름다운 펜션입니다!</span></p>
+                </div>
+                <div id="two">
+                    <h2 class="text-design">TWO!! 둘</h3>
+                    <p><span style="color:white">저희 펜션에서 <span style="font-weight:bold;">특별한 경험</span>을 쌓으세요!</span></p>
+                </div>
+                <div id="three">
+                    <h2 class="text-design">THREE!! 셋</h3>
+                    <p><span style="color:white">친환경적인 펜션으로 <b>최상</b>의 경험을 보답해드립니다!</span></p>
+                </div>
+                <div id="four">
+                    <h2 class="text-design">FOUR!! 넷</h2>
+                    <p><span style="color:white">자그마한 이벤트도 상시 준비중이니 찾아주세요!</span></p>
+                </div>
+            </div>
+            <div id="ani">
+                <a id="toggle"class="various-effect">토글</a>
+                <br>
+                <br>
+                <a id="slide"class="various-effect" >슬라이드</a>
+                <br>
+                <br>
+                <a id="ani_1"class="various-effect" >1번 확대</a>
+                <br>
+                <br>
+                <a id="ani_2"class="various-effect" >2번 확대</a>
+                <br>
+                <br>
+                <a id="ani_3"class="various-effect" >3번 확대</a>
+                <br>
+                <br>
+                <a id="ani_4"class="various-effect" >4번 확대</a>
+                <br>
+                <br>
+            </div>
+
+            <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT"> 
+
+                document.write("같은하늘아래우리 펜션의 <font color=red>" + hitCt + "</font> 번째 방문자십니다!") 
+                
+            </SCRIPT> 
+            
+            <br><br><br><br>
+            <span class="window">
+                <form name="Chk">
+                    <input type='text' class="input_text" value="이벤트" name="keyword">
+                </form>
+            </span>
+            <button type="submit" class="search" onclick="check_search()">검색</button>
+            <hr>
+        </div>
+
+        </div>
+
+        
+</body>
+</html>         
+        
